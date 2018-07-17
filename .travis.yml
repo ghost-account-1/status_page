@@ -1,6 +1,18 @@
 language: python
-before_install:
-    - sudo apt-get update
-    - pip install flask selenium requests
+env:
+  - MOZ_HEADLESS=1
+addons:
+  firefox: latest
 
-script: FLASK_APP=app.py flask run & python functional_tests.py
+install:
+    - sudo apt-get update
+    - sudo apt-get install
+    - pip install flask selenium requests
+before_script:
+    - wget https://github.com/mozilla/geckodriver/releases/download/v0.21.0/geckodriver-v0.21.0-linux64.tar.gz
+    - mkdir geckodriver
+    - tar -xzf geckodriver*.tar.gz -C geckodriver
+    - export PATH=$PATH:$PWD/geckodriver
+    - FLASK_APP=app.py flask run &
+
+script: python functional_tests.py
