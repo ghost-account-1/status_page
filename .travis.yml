@@ -1,0 +1,6 @@
+language: python
+before_install:
+    - sudo apt-get update
+    - pip install flask selenium requests
+
+script: FLASK_APP=app.py flask run & python functional_tests.py
