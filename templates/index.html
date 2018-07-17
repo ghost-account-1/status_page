@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Website Status</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://getskeleton.com/dist/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="http://getskeleton.com/dist/css/skeleton.css" rel="stylesheet" type="text/css">
+  <link href="http://getskeleton.com/css/custom.css" rel="stylesheet" type="text/css">
+  <link href="http://getskeleton.com/css/github-prettify-theme.css" rel="stylesheet" type="text/css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <h2 class="title">A dead simple, status page.</h2>
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Website</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id='website'>{{url}}</td>
+                        <td id='website_status'>{{status}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <p>How to use: url/website-to-test<br>
+           Example: url/github.com</p>
+        <div class="container">
+            <a class="button eleven column" href="#">Download Code</a>
+        </div>
+    </div>
+</body>
+</html>
