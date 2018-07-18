@@ -6,3 +6,4 @@ click
 MarkupSafe
 requests
 gunicorn
+Flask-Compress
