@@ -7,7 +7,7 @@ addons:
 install:
     - sudo apt-get update
     - sudo apt-get install
-    - pip install flask selenium requests
+    - pip install flask selenium requests flask-compress
 before_script:
     - wget https://github.com/mozilla/geckodriver/releases/download/v0.21.0/geckodriver-v0.21.0-linux64.tar.gz
     - mkdir geckodriver
