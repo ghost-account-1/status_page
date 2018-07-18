@@ -34,20 +34,25 @@
     <div class="container">
         <section class="header">
             <h2 class="title">A dead simple, status page.</h2>
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Website</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id='website'>{{url}}</td>
+                        <td id='website_status'>{{status}}</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
+        <p>How to use: url/website-to-test<br>
+           Example: url/github.com</p>
         <div class="container">
-            <h4 align="center" id='help'>What can you do with this website?</h4>
-            <div class="container">
-                <p align="center" class="eleven column">
-                   Stare and marvel at its beauty? Ahahaha!<br>
-                   You could do that, but you can also use it<br>
-                   to check whether a certain website is operational.<br>
-                   <br>
-                   How to use: url/website-to-test<br>
-                   Example: url/github.com<br>
-                   Go ahead, try it. Have fun =)
-                </p>
-            </div>
+            <a class="button eleven column" href="https://github.com/ghost-account-1/status_page">Download Code</a>
         </div>
     </div>
 </body>

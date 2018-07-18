@@ -21,6 +21,9 @@ class StatusTest(unittest.TestCase):
         self.assertIn('disneylife.globe.com.ph', self.browser.find_element_by_id("website").text)
         self.assertIn('Major Outage', self.browser.find_element_by_id("website_status").text)
 
+    def test_index(self):
+        self.browser.get('http://localhost:5000')
+        self.assertIn('What can you do with this website?', self.browser.find_element_by_id("help").text)
 
 if __name__ == '__main__':
     unittest.main()
